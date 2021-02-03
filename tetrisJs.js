@@ -11,7 +11,7 @@ setInterval(function(){
 }, 5);
 
 let fastSpeed = 50;
-let slowSpeed = 150;
+let slowSpeed = 180;
 
 
 let cells = [];
