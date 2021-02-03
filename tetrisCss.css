@@ -1,0 +1,43 @@
+#mainFrame{
+transition: 1s;
+position: fixed;
+height: 800px;
+width: 400px;
+
+opacity: 0;
+
+display: grid;
+
+grid-template-columns: repeat(8, 50px);
+grid-template-rows: repeat(16, 50px);
+
+border: solid 3px gray;
+
+}
+
+
+#curFig{
+
+
+position: fixed;
+height: 48px; width: 48px;
+background-color: red;
+
+
+}
+
+
+#startButton{
+
+transition: 1s;
+position: fixed;
+height: 75px;
+width: 200px;
+font-size: 55px;
+color: #b30c00;
+background-color: #d4d4d4;
+border: solid 5px red;
+border-radius: 10%;
+top: 300px;
+
+}
