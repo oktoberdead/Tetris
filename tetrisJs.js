@@ -127,9 +127,9 @@ function freezeInPos(){
 	currentFigure = document.createElement("div");
 	currentFigure.id = "curFig";
 	isOccupied[N] = 1;
-	figRed = rand(50, 256);
-	figBlue = rand(50, 256);
-	figGreen = rand(50, 256);
+	figRed = rand(50, 200);
+	figBlue = rand(50, 200);
+	figGreen = rand(50, 200);
 	figAlpha = rand(50, 100);
 	currentFigure.style.background = "rgba("+figRed+","+figGreen+","+figBlue+","+figAlpha/100+")"; 
 	N = 4;
