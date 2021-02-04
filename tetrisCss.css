@@ -35,3 +35,29 @@ border-radius: 10%;
 top: 300px;
 
 }
+
+
+#lnk{
+
+
+color: #015959;
+height: 30px;
+width: 400px;
+font-size: 25px;
+position: fixed;
+transition: 0.5s;
+
+
+}
+
+
+a{
+	text-decoration: none;
+}
+a:visited{
+	color: #215952;
+}
+a:hover{
+	color: #1e9484;
+}
+
