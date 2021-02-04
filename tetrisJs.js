@@ -4,7 +4,7 @@ let cellSize;
 if(window.innerWidth < window.innerHeight) cellSize = window.innerWidth / (fieldWidth + innerWidth/30);
 else if(window.innerWidth > window.innerHeight) cellSize = window.innerHeight / (fieldHeight + innerHeight/200);
 
-//20 = 122; 10 = 112; 30 = 132
+
 let mainFr = document.getElementById("mainFrame");
 let button = document.getElementById("startButton");
 let link = document.getElementById("lnk");
