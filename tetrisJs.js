@@ -1,12 +1,14 @@
-const fieldHeight = 40;
-const fieldWidth = 20;
+const fieldHeight = 20;
+const fieldWidth = 10;
 let cellSize;
 if(window.innerWidth < window.innerHeight) cellSize = window.innerWidth / (fieldWidth + innerWidth/30);
 else if(window.innerWidth > window.innerHeight) cellSize = window.innerHeight / (fieldHeight + innerHeight/200);
 
-
+//20 = 122; 10 = 112; 30 = 132
 let mainFr = document.getElementById("mainFrame");
 let button = document.getElementById("startButton");
+let link = document.getElementById("lnk");
+
 let isStarted = 0;
 
 let type;
@@ -29,6 +31,9 @@ let N = Math.floor(fieldWidth / 2);
 let isSmthPressed = 0;
 let numberOfFigures = 0;
 
+
+
+link.style.top = fieldHeight * cellSize + 50 + "px";
 
 mainFr.style.gridTemplateColumns = "repeat(" + fieldWidth + ", " + cellSize + "px)";
 mainFr.style.gridTemplateRows = "repeat(" + fieldHeight + ", " + cellSize + "px)";
@@ -72,12 +77,13 @@ let currentFigure = document.createElement("div");
 	window.onresize = function sizeControl(event){
 		
 			mainFr.style.left = window.innerWidth / 2 - (cellSize+2)*Math.floor(fieldWidth / 2) + "px"; 
-			button.style.left = window.innerWidth / 2 - 107 + "px";
-		
+			button.style.left = window.innerWidth / 2 - 102 - fieldWidth + "px";
+			link.style.left = window.innerWidth / 2 - 202 - fieldWidth + "px";
 }
 if(window.innerWidth > fieldWidth * (cellSize+2)) {
 			mainFr.style.left = window.innerWidth / 2 - (cellSize+2)*Math.floor(fieldWidth / 2) + "px"; 
-			button.style.left = window.innerWidth / 2 - 107 + "px";
+			button.style.left = window.innerWidth / 2 - 102 - fieldWidth + "px";
+			link.style.left = window.innerWidth / 2 - 202 - fieldWidth + "px";
 		}
 
 
