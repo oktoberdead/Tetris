@@ -1,5 +1,5 @@
 #mainFrame{
-transition: 1s;
+transition: 0.5s;
 position: fixed;
 height: 800px;
 width: 400px;
@@ -29,7 +29,7 @@ background-color: red;
 
 #startButton{
 
-transition: 1s;
+transition: 0.5s;
 position: fixed;
 height: 75px;
 width: 200px;
