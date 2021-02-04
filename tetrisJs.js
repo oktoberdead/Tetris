@@ -1,6 +1,8 @@
-const fieldHeight = 20;
-const fieldWidth = 11;
-const cellSize = 25;
+const fieldHeight = 40;
+const fieldWidth = 20;
+let cellSize;
+if(window.innerWidth < window.innerHeight) cellSize = window.innerWidth / (fieldWidth + innerWidth/30);
+else if(window.innerWidth > window.innerHeight) cellSize = window.innerHeight / (fieldHeight + innerHeight/200);
 
 
 let mainFr = document.getElementById("mainFrame");
@@ -69,7 +71,7 @@ let currentFigure = document.createElement("div");
 
 	window.onresize = function sizeControl(event){
 		
-			mainFr.style.left = window.innerWidth / 2 - (cellSize+2)*Math.floor(fieldWidth / 2); + "px"; 
+			mainFr.style.left = window.innerWidth / 2 - (cellSize+2)*Math.floor(fieldWidth / 2) + "px"; 
 			button.style.left = window.innerWidth / 2 - 107 + "px";
 		
 }
