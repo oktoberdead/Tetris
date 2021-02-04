@@ -1,8 +1,14 @@
-const fieldHeight = 20;
-const fieldWidth = 10;
+
+let fieldHeight = 20;
+let fieldWidth = 10;
 let cellSize;
-if(window.innerWidth < window.innerHeight) cellSize = window.innerWidth / (fieldWidth + innerWidth/30);
-else if(window.innerWidth > window.innerHeight) cellSize = window.innerHeight / (fieldHeight + innerHeight/200);
+let fastSpeed = 35;
+let slowSpeed = 130;
+
+
+if(window.innerWidth < window.innerHeight) cellSize = window.innerWidth / (fieldWidth + innerWidth/90);
+else if(window.innerWidth > window.innerHeight) cellSize = window.innerHeight / (fieldHeight + innerHeight/190);
+
 
 
 let mainFr = document.getElementById("mainFrame");
@@ -16,8 +22,6 @@ let figure = [0];
 let figurePos = [0];
 
 let isGameOver = 0;
-let fastSpeed = 35;
-let slowSpeed = 130;
 
 let figRed, figGreen, figBlue, figAlpha;
 
@@ -26,12 +30,13 @@ let isOccupied = [0]
 
 let I = 0;
 
-let fallSpeed = slowSpeed;
+
 let N = Math.floor(fieldWidth / 2);
 let isSmthPressed = 0;
 let numberOfFigures = 0;
 
 
+let fallSpeed = slowSpeed;
 
 link.style.top = fieldHeight * cellSize + 50 + "px";
 
